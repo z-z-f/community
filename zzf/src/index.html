@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">通知</a></li>
+                <li><a href="#">设置</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header nav-header">
+                    <p class="text-code">三鑫智慧社区</p>
+                    <p class="text-bot">一站式惠民服务平台</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ui-sref="index"><a>首页 <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown" ui-sref="group">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">社区团体活动服务<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li ui-sref="party"><a>党组织活动服务</a></li>
+                        <li ui-sref="swaraj"><a>居民自治活动服务</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<ui-view></ui-view>
+
+
+<!--<ol class="breadcrumb">-->
+    <!--<li>当前位置 : 首页</li>-->
+    <!--<li>社区养老</li>-->
+    <!--<li>离休退休</li>-->
+<!--</ol>-->
+<!--<div class="container-fluid">-->
+    <!--<div class="media repeat">-->
+        <!--<a class="pull-left" href="#">-->
+            <!--<img class="media-object" src="images/pic.png" alt="媒体对象">-->
+            <!--<img class="img" src="images/b1.png"/>-->
+        <!--</a>-->
+        <!--<div class="media-body">-->
+            <!--<h4 class="media-heading">社区生日会</h4>-->
+            <!--提供社区五保供养申请的办理指南、注意事项、办理机构等相关的服务。-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+<!--<ul class="nav nav-tabs" role="tablist">-->
+    <!--<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">活动介绍</a></li>-->
+    <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">查看活动</a></li>-->
+    <!--<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">活动总结</a></li>-->
+<!--</ul>-->
+<!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+<!--<div class="tab-content">-->
+    <!--<div role="tabpanel" class="tab-pane active" id="home">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-10 col-md-10">-->
+                <!--<div class="container-fluid first-table">-->
+                    <!--<h2 id="info" class="pos">基本信息 <button type="button" class="btn btn-info abs">返回</button></h2>-->
+                    <!--<p>责任人：张鑫  13023948374</p>-->
+                    <!--<p>责任人单位：南风里居委会</p>-->
+                    <!--<h2 id="name">请输入栏目名称</h2>-->
+                    <!--<put-file></put-file>-->
+                    <!--<h2 id="resident">评论区</h2>-->
+                    <!--<table class="table text-center table-striped table-hover">-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                            <!--<td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>-->
+                            <!--<td class="col-md-2">2017-3-5 09:57</td>-->
+                            <!--<td class="col-md-1">回复</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>-->
+                            <!--<td class="col-md-2">2017-3-5 09:57</td>-->
+                            <!--<td class="col-md-1">回复</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>-->
+                            <!--<td class="col-md-2">2017-3-5 09:57</td>-->
+                            <!--<td class="col-md-1">回复</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>-->
+                            <!--<td class="col-md-2">2017-3-5 09:57</td>-->
+                            <!--<td class="col-md-1">回复</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>-->
+                            <!--<td class="col-md-2">2017-3-5 09:57</td>-->
+                            <!--<td class="col-md-1">回复</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                    <!--<textarea name="" id="" cols="150" rows="3"></textarea>-->
+                    <!--<p class="text-right">-->
+                        <!--<button type="button" class="btn btn-info">发送</button>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-sm-2 col-md-2">-->
+                <!--<nav id="navbar-example2" class="navbar nav-side">-->
+                    <!--<div class="timeline-wrap clearfix fix">-->
+                        <!--<span class="circle top"></span>-->
+                        <!--<span class="circle bottom"></span>-->
+                        <!--<ul class="nav navbar-nav time-line">-->
+                            <!--<li><a href="#info">基本信息</a></li>-->
+                            <!--<li class="active"><a href="#name">请输入栏目名称</a></li>-->
+                            <!--<li><a href="#resident">居民预约</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</nav>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div role="tabpanel" class="tab-pane" id="profile">-->
+        <!--<div class="col-md-4">-->
+            <!--<dl>-->
+                <!--<b>未开始</b>-->
+                <!--<dt>-->
+                    <!--<span></span>-->
+                    <!--<input-file1></input-file1>-->
+                    <!--&lt;!&ndash;<label for="inputFile1"></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="file" id="inputFile1">&ndash;&gt;-->
+                <!--</dt>-->
+                <!--<dd>-->
+                    <!--<h2>春暖花开社区生日会</h2>-->
+                    <!--<p>-->
+                        <!--<span>2017年3月21日</span>-->
+                        <!--<span>三鑫社区11号楼2门301</span>-->
+                    <!--</p>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
+        <!--<div class="col-md-4">-->
+            <!--<dl>-->
+                <!--<b>已结束</b>-->
+                <!--<dt class="sec">-->
+                    <!--<span></span>-->
+                    <!--<input-file4></input-file4>-->
+                    <!--&lt;!&ndash;<label for="inputFile2"></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="file" id="inputFile2">&ndash;&gt;-->
+                <!--</dt>-->
+                <!--<dd>-->
+                    <!--<h2>春暖花开社区生日会</h2>-->
+                    <!--<p>-->
+                        <!--<span>2017年3月21日</span>-->
+                        <!--<span>三鑫社区11号楼2门301</span>-->
+                    <!--</p>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
+        <!--<div class="col-md-4">-->
+            <!--<dl>-->
+                <!--<b>已总结</b>-->
+                <!--<dt class="thi">-->
+                    <!--<span></span>-->
+                    <!--<input-file3></input-file3>-->
+                    <!--&lt;!&ndash;<label for="inputFile3"></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="file" id="inputFile3">&ndash;&gt;-->
+                <!--</dt>-->
+                <!--<dd>-->
+                    <!--<h2>春暖花开社区生日会</h2>-->
+                    <!--<p>-->
+                        <!--<span>2017年3月21日</span>-->
+                        <!--<span>三鑫社区11号楼2门301</span>-->
+                    <!--</p>-->
+                <!--</dd>-->
+            <!--</dl>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div role="tabpanel" class="tab-pane first-table" id="messages">-->
+        <!--<div class="row">-->
+            <!--<div class="container-fluid">-->
+                <!--<div class="col-md-10">-->
+                    <!--<div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">-->
+                        <!--<h2 id="sir">请输入栏目名称</h2>-->
+                        <!--<put-file></put-file>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-2">-->
+                    <!--<nav id="navbar-example3" class="navbar nav-side">-->
+                        <!--<div class="timeline-wrap clearfix">-->
+                            <!--<span class="circle top"></span>-->
+                            <!--<span class="circle bottom"></span>-->
+                            <!--<ul class="nav navbar-nav time-line">-->
+                                <!--<li class="active"><a href="#sir">请输入栏目名称</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+
+                    <!--</nav>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<script src="../dist/js/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../dist/js/angular.js"></script>
+<script src="../dist/js/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

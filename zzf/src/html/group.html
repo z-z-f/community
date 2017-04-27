@@ -1,0 +1,172 @@
+<ol class="breadcrumb">
+    <li>当前位置 : 首页</li>
+    <li>社区养老</li>
+    <li>离休退休</li>
+</ol>
+
+<div class="container-fluid">
+    <div class="media repeat">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="images/pic.png" alt="媒体对象">
+            <img class="img" src="images/b1.png"/>
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">社区生日会</h4>
+            提供社区五保供养申请的办理指南、注意事项、办理机构等相关的服务。
+        </div>
+    </div>
+</div>
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">活动介绍</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">查看活动</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">活动总结</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="row">
+            <div class="col-sm-10 col-md-10">
+                <div class="container-fluid first-table">
+                    <h2 id="info" class="pos">基本信息 <button type="button" class="btn btn-info abs">返回</button></h2>
+                    <p>责任人：张鑫  13023948374</p>
+                    <p>责任人单位：南风里居委会</p>
+                    <h2 id="name">请输入栏目名称</h2>
+                    <put-file></put-file>
+                    <h2 id="resident">评论区</h2>
+                    <table class="table text-center table-striped table-hover">
+                        <tbody>
+                        <tr>
+                            <td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>
+                            <td class="col-md-2">2017-3-5 09:57</td>
+                            <td class="col-md-1">回复</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>
+                            <td class="col-md-2">2017-3-5 09:57</td>
+                            <td class="col-md-1">回复</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>
+                            <td class="col-md-2">2017-3-5 09:57</td>
+                            <td class="col-md-1">回复</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>
+                            <td class="col-md-2">2017-3-5 09:57</td>
+                            <td class="col-md-1">回复</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9 text-left">李大爷：这个活动举办的非常好。希望以后多举办类似的活动</td>
+                            <td class="col-md-2">2017-3-5 09:57</td>
+                            <td class="col-md-1">回复</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <textarea name="" id="" cols="150" rows="3" ng-model="txt"></textarea>
+                    <p class="text-right">
+                        <button type="button" class="btn btn-info" ng-click="btn(txt)">发送</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2">
+                <nav id="navbar-example2" class="navbar nav-side">
+                    <div class="timeline-wrap clearfix fix">
+                        <span class="circle top"></span>
+                        <span class="circle bottom"></span>
+                        <ul class="nav navbar-nav time-line">
+                            <li><a href="#info">基本信息</a></li>
+                            <li class="active"><a href="#name">请输入栏目名称</a></li>
+                            <li><a href="#resident">居民预约</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+        <ui-view>
+        <div class="col-md-4">
+            <dl>
+                <b>未开始</b>
+                <dt>
+                    <span></span>
+                    <input-file1></input-file1>
+                    <!--<label for="inputFile1"></label>-->
+                    <!--<input type="file" id="inputFile1">-->
+                </dt>
+                <dd>
+                    <h2>春暖花开社区生日会</h2>
+                    <p>
+                        <span>2017年3月21日</span>
+                        <span>三鑫社区11号楼2门301</span>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <b>已结束</b>
+                <dt class="sec">
+                    <span></span>
+                    <!--<input-file4></input-file4>-->
+                    <label ui-sref="group.newPage"></label>
+                    <!--<input type="file" id="inputFile2">-->
+                </dt>
+                <dd>
+                    <h2>春暖花开社区生日会</h2>
+                    <p>
+                        <span>2017年3月21日</span>
+                        <span>三鑫社区11号楼2门301</span>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <b>已总结</b>
+                <dt class="thi">
+                    <span></span>
+                    <input-file3></input-file3>
+                    <!--<label for="inputFile3"></label>-->
+                    <!--<input type="file" id="inputFile3">-->
+                </dt>
+                <dd>
+                    <h2>春暖花开社区生日会</h2>
+                    <p>
+                        <span>2017年3月21日</span>
+                        <span>三鑫社区11号楼2门301</span>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+       </ui-view>
+    </div>
+    <div role="tabpanel" class="tab-pane first-table" id="messages">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-10">
+                    <div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                        <h2 id="sir">请输入栏目名称</h2>
+                        <put-file></put-file>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <nav id="navbar-example3" class="navbar nav-side">
+                        <div class="timeline-wrap clearfix">
+                            <span class="circle top"></span>
+                            <span class="circle bottom"></span>
+                            <ul class="nav navbar-nav time-line">
+                                <li class="active"><a href="#sir">请输入栏目名称</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
